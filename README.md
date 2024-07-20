@@ -1,4 +1,4 @@
-"# Earthquake Data Pipeline
+# Earthquake Data Pipeline
 
 ## Introduction
 The purpose of this project is to build an ETL pipeline that extracts earthquake data from the USGS Earthquake API and loads it into an AWS RDS instance running a PostgreSQL database. The data is then visualized using Tableau to provide insights into recent earthquake activities.
