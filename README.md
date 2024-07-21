@@ -34,36 +34,28 @@ The ingestion stage results in a dataset stored in the PostgreSQL database. This
 
 ### Set Up the Environment:
 
-\`\`\`bash
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### Configure AWS and Database Credentials:
 Update the \`config.py\` file with your AWS and PostgreSQL credentials.
 
 ### Run the Ingestion Script:
 
-\`\`\`bash
+```bash
 python earthquake_data_ingestion.py
-\`\`\`
+```
 
 ### Set Up Scheduled Jobs:
 Use \`cron\` or any scheduler to run the ingestion script daily.
 
 ### Tableau Visualization
-Connect Tableau to the PostgreSQL database and use the data to create interactive visualizations. Example visualizations include:
-
-- Map of recent earthquakes with color-coded magnitudes.
-- Time-series plot of earthquake occurrences.
-- Bar chart of earthquake frequencies by magnitude range.
-
+![Dashboard](https://github.com/andrewbriden/earthquake/blob/main/Dashboard.png)
 ## Future Directions
-- **Data Enrichment**: Integrate additional data sources to provide more context (e.g., population density, building infrastructure) to the earthquake data.
-- **Real-time Data Processing**: Implement a real-time data pipeline using AWS Lambda and Kinesis.
-- **Advanced Analytics**: Apply machine learning models to predict earthquake occurrences and assess risks.
-- **Enhanced Visualizations**: Create more detailed and interactive visualizations in Tableau or other BI tools.
+- **Improve Real-time Data Processing**: Implement a real-time data pipeline using AWS Lambda and Kinesis. Currently it updates every 24 hours, but with minute by minute updates, this dashboard would be interesting to see real life changes over time.
 - **Automated Reporting**: Set up automated reports and alerts based on earthquake data thresholds.
 
 
