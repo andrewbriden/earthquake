@@ -10,7 +10,8 @@ The project is divided into two stages:
 2. Visualization Stage: Connecting Tableau to the PostgreSQL database and creating visualizations.
 
 ## Diagram
-![Project Architecture Diagram](earthquake/diagram.png)
+![Project Architecture Diagram](https://github.com/andrewbriden/earthquake/blob/main/diagram.png)
+
 ### Ingestion
 The objective is to retrieve recent earthquake data from the USGS Earthquake API. The data includes information such as location, magnitude, depth, and time of occurrence. This script runs daily to ensure the database is updated with the latest data.
 
