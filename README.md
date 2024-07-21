@@ -9,6 +9,8 @@ The project is divided into two stages:
 1. Ingestion Stage: Retrieving data from the USGS Earthquake API into the PostgreSQL database.
 2. Visualization Stage: Connecting Tableau to the PostgreSQL database and creating visualizations.
 
+## Diagram
+![Project Architecture Diagram](earthquake/diagram.png)
 ### Ingestion
 The objective is to retrieve recent earthquake data from the USGS Earthquake API. The data includes information such as location, magnitude, depth, and time of occurrence. This script runs daily to ensure the database is updated with the latest data.
 
